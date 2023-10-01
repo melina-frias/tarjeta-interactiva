@@ -1,0 +1,44 @@
+<section>
+  <div class="firstCard">
+    <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+      <path
+        d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+        stroke="#fff" />
+    </svg>
+    <h2>{{datos.numero_tarjeta | spacePipe}}</h2>
+    <h2 *ngIf="!datos.numero_tarjeta">0000 0000 0000 0000</h2>
+    <div>
+      <h4 *ngIf="datos.nombre">{{datos.nombre | uppercase}}</h4>
+      <h4 *ngIf="!datos.nombre">NOMBRE TITULAR</h4>
+      <p *ngIf="datos.mes_vencimiento">{{datos. mes_vencimiento }}</p>
+      <p *ngIf="!datos.mes_vencimiento">00</p>
+
+      <span>/</span>
+      <p *ngIf="datos.anio_vencimiento">{{datos. anio_vencimiento }}</p>
+      <p *ngIf="!datos.anio_vencimiento">00</p>
+    </div>
+  </div>
+  <div class="secondCard">
+    <hr class="bandaMagnetica">
+    <p  class="codigo">{{datos.codigo_seguridad }}</p>
+    <div class="boxBarras">
+      <hr class="barra" style="width: 100px;">
+      <hr class="barra" style="width: 30px;">
+      <hr class="barra" style="width: 30px;">
+
+      <hr class="barra" style="width: 20px;">
+      <hr class="barra" style="width: 100px;">
+      <hr class="barra" style="width: 20px;">
+
+      <hr class="barra" style="width: 30px;">
+      <hr class="barra" style="width: 100px;">
+      <hr class="barra" style="width: 30px;">
+
+
+
+    </div>
+
+
+  </div>
+</section>

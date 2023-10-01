@@ -1,0 +1,99 @@
+<form [formGroup]="form" *ngIf="mostrarFormulario">
+  <label for="nombre">cardholder name</label>
+  <input type="text" name="nombre" formControlName="nombre" placeholder="e.g. Jane Appleseed"
+    [ngClass]="{ 'errorInput': form.get('nombre')?.errors && form.get('nombre')?.dirty,
+          'correctoInput': !form.get('nombre')?.errors && form.get('nombre')?.dirty }">
+
+  <p *ngIf="form.get('nombre')?.errors && form.get('nombre')?.dirty" class="error">
+    No puede estar vacio
+  </p>
+
+
+  <label for="cardNumber">card number</label>
+  <input type="text" name="cardNumber" id="cardNumber"
+  [maxLength]="16"
+    formControlName="numero_tarjeta" placeholder="e.g. 1234 5678 9123 0000"
+    [ngClass]="{ 'errorInput': form.get('numero_tarjeta')?.errors && form.get('numero_tarjeta')?.dirty,
+          'correctoInput': !form.get('numero_tarjeta')?.errors && form.get('numero_tarjeta')?.dirty }">
+
+  <p *ngIf="form.get('numero_tarjeta')?.hasError('required') && form.get('numero_tarjeta')?.dirty" class="error">
+    No puede estar vacio
+  </p>
+
+  <p *ngIf="form.get('numero_tarjeta')?.hasError('pattern')" class="error">
+    Error de formato. Solo ingrese números
+  </p>
+
+  <!-- <p *ngIf="form.get('numero_tarjeta')?.errors && form.get('numero_tarjeta')?.dirty">Error de formato. Ingrese números unicamente</p> -->
+
+  <p *ngIf="form.get('numero_tarjeta')?.hasError('maxlength')" class="error">
+    Son solamente 16 dígitos
+  </p>
+
+  <div class="boxVencimientoSeguridad">
+    <div class="infoVencimiento">
+      <label for="">exp. date (mm/yy)</label>
+      <div class="vencimiento">
+        <input type="text" name="mesVencimiento" id="mesVencimiento"
+        pattern="^(0?[1-9]|1[0-2])$"
+        [maxLength]="2"
+          formControlName="mes_vencimiento" placeholder="mm"
+          [ngClass]="{ 'errorInput': form.get('mes_vencimiento')?.errors && form.get('mes_vencimiento')?.dirty,
+          'correctoInput': !form.get('mes_vencimiento')?.errors && form.get('mes_vencimiento')?.dirty }">
+
+
+        <input type="text" name="anioVencimiento" id="anioVencimiento"
+          formControlName="anio_vencimiento" placeholder="yy"
+          [maxLength]="2"
+          [ngClass]="{ 'errorInput': form.get('anio_vencimiento')?.errors && form.get('anio_vencimiento')?.dirty,
+          'correctoInput': !form.get('anio_vencimiento')?.errors && form.get('anio_vencimiento')?.dirty }">
+
+      </div>
+      <div class="textoError">
+        <!-- mes vencimiento -->
+        <p *ngIf="form.get('mes_vencimiento')?.hasError('required') && form.get('mes_vencimiento')?.dirty" class="error">
+          No puede estar vacio
+        </p>
+
+        <p *ngIf="form.get('mes_vencimiento')?.errors && form.get('mes_vencimiento')?.hasError('pattern') || form.get('mes_vencimiento')?.hasError('maxlength')" class="error">
+          Formato incorrecto
+        </p>
+        <!-- anio vencimiento -->
+        <p *ngIf="form.get('anio_vencimiento')?.hasError('required') && form.get('anio_vencimiento')?.dirty" class="error">
+          No puede estar vacio
+        </p>
+
+        <p *ngIf="form.get('anio_vencimiento')?.errors && form.get('anio_vencimiento')?.hasError('pattern') || form.get('anio_vencimiento')?.hasError('maxlength')" class="error">
+          Formato incorrecto
+        </p>
+      </div>
+    </div>
+
+    <div class="infoSeguridad">
+      <label for="codigoSeguridad">cvc</label>
+      <input type="text" name="codigoSeguridad" id="codigoSeguridad"
+      [maxLength]="3"
+        formControlName="codigo_seguridad" placeholder="e.g. 123" [ngClass]="{ 'errorInput': form.get('codigo_seguridad')?.errors && form.get('codigo_seguridad')?.dirty,
+          'correctoInput': !form.get('codigo_seguridad')?.errors && form.get('codigo_seguridad')?.dirty }">
+
+      <p *ngIf="form.get('codigo_seguridad')?.errors && form.get('codigo_seguridad')?.hasError('pattern') || form.get('codigo_seguridad')?.hasError('maxlength')" class="error">
+        Formato incorrecto
+      </p>
+
+      <p *ngIf="form.get('codigo_seguridad')?.hasError('required') && form.get('codigo_seguridad')?.dirty" class="error">
+        No puede estar vacio
+      </p>
+    </div>
+  </div>
+  <button type="submit"
+  (click)="msjExito()"
+  [disabled]="!form.valid"
+  [ngClass]="{'btnDisabled': form.invalid, 'validButton': form.valid}">Confirm</button>
+</form>
+
+<div *ngIf="!mostrarFormulario" class="boxMsjExito">
+  <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+<h1>Thank you!</h1>
+<p>We 've added yor card details</p>
+<button type="submit" (click)="msjExito()">Continue</button>
+</div>
