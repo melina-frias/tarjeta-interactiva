@@ -2,9 +2,9 @@
 
 Este proyecto es una implementación del desafío "Interactive Card Details Form" de Frontend Mentor. El objetivo del desafío es crear un formulario interactivo para ingresar detalles de una tarjeta de crédito.
 
-![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/27858263-7dba-4226-9fcc-79e16af31e60)
+![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/a1257aeb-5cdb-43a3-8f2c-0c223c435ede)
 
-![screencapture-localhost-4200-2023-09-29-17_03_49](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/a1257aeb-5cdb-43a3-8f2c-0c223c435ede)
+
 
 
 
