@@ -6,7 +6,7 @@ Este proyecto es una implementación del desafío "Interactive Card Details Form
 
 
 
-Puedes ver la versión en vivo del proyecto aquí: [Enlace a la demo](https://github.com/melina-frias/formulario-tarjeta)
+Puedes ver la versión en vivo del proyecto aquí: [Enlace a la demo][(https://github.com/melina-frias/formulario-tarjeta)](https://tarjeta-interactiva-snowy.vercel.app/)
 
 ## Características
 
