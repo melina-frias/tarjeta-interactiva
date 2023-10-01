@@ -19,10 +19,12 @@ Puedes ver la versión en vivo del proyecto aquí:[(https://github.com/melina-fr
 - Estilos CSS personalizados usando SCSS.
 
 ## Capturas de Pantalla
-![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/55316eba-c4d2-4fcf-bc67-31e6d1ca54e8)
-![Captura de pantalla 2](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/349854b3-2883-4554-a31b-79193177261b)
-![Captura de pantalla 3](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/4d5724c8-d206-4f86-a688-6ed27282b4ad)
-![Captura de pantalla 4](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/6038623a-4db0-4d30-995c-bad333d65225)
+![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/cc062df5-25d8-4ab6-889b-69115405dde1)
+![Captura de pantalla 2](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/4682fecd-08b6-4cf4-b325-624780192725)
+![Captura de pantalla 3](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/6445564e-e0fd-45ab-b755-2a321580e4f7)
+![Captura de pantalla 4](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/50766779-d91a-461e-8753-cbaccf9bcbcc)
+![Captura de pantalla 5](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/bb9d3fdb-1d26-49e7-bf50-7ffea1949dd4)
+
 
 
 
