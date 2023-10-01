@@ -2,11 +2,12 @@
 
 Este proyecto es una implementación del desafío "Interactive Card Details Form" de Frontend Mentor. El objetivo del desafío es crear un formulario interactivo para ingresar detalles de una tarjeta de crédito.
 
-![Captura de pantalla 1](https://github.com/melina-frias/formulario-tarjeta/assets/119358836/27858263-7dba-4226-9fcc-79e16af31e60)
+![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/27858263-7dba-4226-9fcc-79e16af31e60)
 
 
 
-Puedes ver la versión en vivo del proyecto aquí: [Enlace a la demo][(https://github.com/melina-frias/formulario-tarjeta)](https://tarjeta-interactiva-snowy.vercel.app/)
+
+Puedes ver la versión en vivo del proyecto aquí:[(https://github.com/melina-frias/tarjeta-interactiva)](https://tarjeta-interactiva-snowy.vercel.app/)
 
 ## Características
 
@@ -17,10 +18,10 @@ Puedes ver la versión en vivo del proyecto aquí: [Enlace a la demo][(https://g
 - Estilos CSS personalizados usando SCSS.
 
 ## Capturas de Pantalla
-![Captura de pantalla 1](https://github.com/melina-frias/formulario-tarjeta/assets/119358836/55316eba-c4d2-4fcf-bc67-31e6d1ca54e8)
-![Captura de pantalla 2](https://github.com/melina-frias/formulario-tarjeta/assets/119358836/349854b3-2883-4554-a31b-79193177261b)
-![Captura de pantalla 3](https://github.com/melina-frias/formulario-tarjeta/assets/119358836/4d5724c8-d206-4f86-a688-6ed27282b4ad)
-![Captura de pantalla 4](https://github.com/melina-frias/formulario-tarjeta/assets/119358836/6038623a-4db0-4d30-995c-bad333d65225)
+![Captura de pantalla 1](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/55316eba-c4d2-4fcf-bc67-31e6d1ca54e8)
+![Captura de pantalla 2](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/349854b3-2883-4554-a31b-79193177261b)
+![Captura de pantalla 3](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/4d5724c8-d206-4f86-a688-6ed27282b4ad)
+![Captura de pantalla 4](https://github.com/melina-frias/tarjeta-interactiva/assets/119358836/6038623a-4db0-4d30-995c-bad333d65225)
 
 
 
